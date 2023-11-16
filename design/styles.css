@@ -1,0 +1,97 @@
+* {
+  font-family: "Epilogue", sans-serif;
+  color: hsl(0, 0%, 8%);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 10px auto;
+}
+.menu * {
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+ul.menu,
+ul.menu ul {
+  list-style: none;
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.menu .logo {
+  color: hsl(0, 0%, 8%);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px; /* Add padding to the logo */
+}
+
+.menu li {
+  position: relative;
+  float: left;
+  margin: auto 10px;
+}
+
+.menu li:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+/* Adjust styling for the dropdown trigger */
+.dropdown-trigger {
+  color: hsl(0, 0%, 8%);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.dropdown-trigger:hover {
+  color: hsl(0, 0%, 20%); /* Change color on hover */
+}
+
+.right-menu {
+  float: right;
+}
+.right-menu .register {
+  border: 1px solid hsl(0, 0%, 8%);
+  margin-top: -6px;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+
+/* body styles */
+nav {
+  padding-bottom: 2rem;
+}
+.landinpg {
+  min-height: 100vh;
+  position: relative;
+  padding-top: 6rem;
+}
+.landinpg .content h1 {
+  font-size: 50px;
+}
+.landinpg img {
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  padding-right: 10rem;
+}
+.landinpg .content {
+  display: inline-block;
+  padding: 30px;
+  width: 40%;
+}
