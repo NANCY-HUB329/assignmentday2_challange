@@ -30,7 +30,8 @@ ul.menu ul {
 .menu li {
   position: relative;
   float: left;
-  margin: auto 10px;
+  margin: auto 15px;
+  cursor: pointer;
 }
 
 .menu li:hover .dropdown-menu {
@@ -43,10 +44,27 @@ ul.menu ul {
   top: 100%;
   left: 0;
   background-color: hsl(0, 0%, 98%);
+  width: 160px;
 }
 
 .dropdown-menu li {
   padding: 10px;
+}
+li a i,
+li a svg {
+  margin-right: 5px;
+}
+li a svg.blue path {
+  fill: blue;
+}
+li a svg.skyblue path {
+  fill: skyblue;
+}
+li a svg.yellow path {
+  fill: yellow;
+}
+li a svg.purple path {
+  fill: purple;
 }
 
 /* Adjust styling for the dropdown trigger */
@@ -75,23 +93,36 @@ ul.menu ul {
 nav {
   padding-bottom: 2rem;
 }
-.landinpg {
+.landingpg {
   min-height: 100vh;
   position: relative;
   padding-top: 6rem;
 }
-.landinpg .content h1 {
+.landingpg .content h1 {
   font-size: 50px;
 }
-.landinpg img {
+.landingpg .hero_image {
   width: 30%;
   position: absolute;
   right: 0;
   top: 1rem;
   padding-right: 10rem;
 }
-.landinpg .content {
+.landingpg .content {
   display: inline-block;
   padding: 30px;
   width: 40%;
+}
+.learnmore_btn {
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-weight: 800;
+}
+.client-logos {
+  padding-top: 40px;
+}
+.client-logos img {
+  margin-right: 20px;
+  max-width: 100px;
 }
